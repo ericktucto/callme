@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videollamada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Videollamada</h1>
+    <div class="controles">
+      <input id="nombre" placeholder="Tu nombre" autocomplete="off">
+      <button id="unirse">Unirse</button>
+      <button id="colgar" class="colgar" disabled>Colgar</button>
+    </div>
+    <p id="estado">Escribe tu nombre y pulsa Unirse.</p>
+  </header>
+
+  <main>
+    <figure>
+      <video id="local" autoplay playsinline muted></video>
+      <figcaption>Tú</figcaption>
+    </figure>
+    <figure id="caja-remoto" class="esperando">
+      <video id="remoto" autoplay playsinline></video>
+      <figcaption id="nombre-remoto">Esperando a la otra persona…</figcaption>
+    </figure>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

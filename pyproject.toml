@@ -1,0 +1,23 @@
+[project]
+name = "callme"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Erick Tucto", email = "erick@ericktucto.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiortc>=1.15.0",
+    "fastapi[standard]>=0.143.2",
+]
+
+[project.scripts]
+callme = "callme:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.fastapi]
+entrypoint = "callme:app"
