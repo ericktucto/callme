@@ -21,3 +21,6 @@ build-backend = "uv_build"
 
 [tool.fastapi]
 entrypoint = "callme:app"
+
+[tool.vercel]
+entrypoint = "callme:app"
